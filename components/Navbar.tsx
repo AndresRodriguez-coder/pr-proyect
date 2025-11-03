@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="bg-white shadow-md">
@@ -9,18 +10,18 @@ export default function Navbar() {
           
           <div className="hidden md:block">
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">
+              <Link href="/" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">
                 Inicio
-              </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">
+              </Link>
+              <Link href="/about" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">
                 Acerca de
-              </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">
+              </Link>
+              <Link href="/servicios" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">
                 Servicios
-              </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">
+              </Link>
+              <Link href="/contact" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">
                 Contacto
-              </a>
+              </Link>
             </div>
           </div>
 
