@@ -1,4 +1,12 @@
-export default function Card({ title, description, icon }) {
+import { ReactNode } from "react";
+
+interface CardProps {
+  title: string;
+  description: string;
+  icon: ReactNode;
+}
+
+export default function Card({ title, description, icon }: CardProps) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
       <div className="text-4xl mb-4">{icon}</div>
